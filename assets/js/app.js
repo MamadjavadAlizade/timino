@@ -6,3 +6,28 @@ function timer(){
 }
 timer()
 setInterval(timer, 1000)
+
+function dateTime(){
+    const time = new Date()
+    const datetimeOptions = {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    }
+    document.getElementById("timerShamsiTime").innerText = time.toLocaleDateString("fa-IR", datetimeOptions)
+    document.getElementById("timerShamsiTimeDay").innerText = time.toLocaleDateString("fa-IR", {day: "numeric"})
+    document.getElementById("timerShamsiTimeMonth").innerText = time.toLocaleDateString("fa-IR", {month: "numeric"})
+    document.getElementById("timerShamsiTimeYear").innerText = time.toLocaleDateString("fa-IR", {year: "numeric"})
+
+    document.getElementById("timerGhamariTime").innerText = time.toLocaleDateString("ar-EG", datetimeOptions)
+    document.getElementById("timerGhamariTimeDay").innerText = time.toLocaleDateString("ar-EG", {day: "numeric"})
+    document.getElementById("timerGhamariTimeMonth").innerText = time.toLocaleDateString("ar-EG", {month: "numeric"})
+    document.getElementById("timerGhamariTimeYear").innerText = time.toLocaleDateString("ar-EG", {year: "numeric"})
+
+    document.getElementById("timerMiladiTime").innerText = time.toLocaleDateString("en-GB", datetimeOptions)
+    document.getElementById("timerMiladiTimeDay").innerText = time.toLocaleDateString("en-GB", {day: "numeric"})
+    document.getElementById("timerMiladiTimeMonth").innerText = time.toLocaleDateString("en-GB", {month: "numeric"})
+    document.getElementById("timerMiladiTimeYear").innerText = time.toLocaleDateString("en-GB", {year: "numeric"})
+}
+dateTime()
