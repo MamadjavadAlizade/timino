@@ -20,8 +20,6 @@ body{
 
 .bg-custom-rtl{
     background: linear-gradient(200deg, #242726 6.67%, rgba(36, 39, 38, 0) 74.33%);
-    position: relative;
-    border-radius: 4.58px;
     &::before{
         content: "";
         position: absolute;
@@ -36,8 +34,6 @@ body{
 }
 .bg-custom-ltr{
     background: linear-gradient(-200deg, #242726 6.67%, rgba(36, 39, 38, 0) 74.33%);
-    position: relative;
-    border-radius: 4.58px;
     &::before{
         content: "";
         position: absolute;
@@ -49,4 +45,9 @@ body{
         border-radius: inherit;
         z-index: -1;
     }
+}
+.timer-box{
+    width: 90.5px;
+    aspect-ratio: 1;
+    background: linear-gradient(137.79deg, #242726 6.83%, rgba(36, 39, 38, 0) 99.67%);
 }
