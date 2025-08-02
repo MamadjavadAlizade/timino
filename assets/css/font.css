@@ -1,0 +1,11 @@
+@font-face {
+    font-family: pinar;
+    src: url(../../public/fonts/pinar.woff2);
+}
+@font-face {
+    font-family: morabbaMedium;
+    src: url(../../public/fonts/Morabba-Medium.woff2);
+}
+.ff-morabba-medium{
+    font-family: morabbaMedium !important;
+}

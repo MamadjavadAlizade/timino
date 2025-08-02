@@ -1,0 +1,12 @@
+@import url(color.css);
+@import url(font.css);
+:root{
+    --mainFont: pinar;
+}
+*{
+    font-family: var(--mainFont);
+}
+
+body{
+    background-color: var(--mainBackgroundColor);
+}
