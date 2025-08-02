@@ -5,7 +5,7 @@
 }
 *{
     font-family: var(--mainFont);
-    color: #fff!important;
+    color: var(--mainTextColor) !important;
 }
 
 body{
@@ -34,6 +34,7 @@ body{
 }
 .bg-custom-ltr{
     background: linear-gradient(-200deg, #242726 6.67%, rgba(36, 39, 38, 0) 74.33%);
+    border: solid 1.83px transparent;
     &::before{
         content: "";
         position: absolute;
@@ -53,4 +54,10 @@ body{
 }
 .datetime-box{
     height: 125px;
+}
+.btn-box{
+    height: 92px;
+    & button{
+        border: none !important;
+    }
 }
