@@ -1,3 +1,5 @@
+const time = new Date()
+
 function timer(){
     const time = new Date()
     document.getElementById("timerSeconds").innerText = new Intl.DateTimeFormat("fa-IR", {second: '2-digit'}).format(time)
@@ -8,7 +10,6 @@ timer()
 setInterval(timer, 1000)
 
 function dateTime(){
-    const time = new Date()
     const datetimeOptions = {
         weekday: "long",
         day: "numeric",
@@ -31,3 +32,10 @@ function dateTime(){
     document.getElementById("timerMiladiTimeYear").innerText = time.toLocaleDateString("en-GB", {year: "numeric"})
 }
 dateTime()
+
+function nextDay(){
+    dateTime(time.setDate(time.getDate() + 1))
+}
+function prevDay(){
+    dateTime(time.setDate(time.getDate() - 1))
+}
