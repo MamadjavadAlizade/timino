@@ -3,3 +3,10 @@
     --mainTextColor: #fffff;
     --customGreen: #00A693;
 }
+
+.bg-green{
+    background-color: var(--customGreen) !important;
+}
+.text-green{
+    color: var(--customGreen) !important;
+}

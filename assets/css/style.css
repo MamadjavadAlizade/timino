@@ -5,8 +5,48 @@
 }
 *{
     font-family: var(--mainFont);
+    color: #fff!important;
 }
 
 body{
     background-color: var(--mainBackgroundColor);
+    direction: rtl;
+    background-image: url(../../public/images/backgrounds/MapChart_Map1-1.svg), url(../../public/images/backgrounds/MapChart_Map1-2.svg);
+}
+
+.header{
+    height: 73px;
+}
+
+.bg-custom-rtl{
+    background: linear-gradient(200deg, #242726 6.67%, rgba(36, 39, 38, 0) 74.33%);
+    position: relative;
+    border-radius: 4.58px;
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(-89.43deg, rgba(255, 255, 255, 0.11) 1.19%, rgba(255, 255, 255, 0) 36.37%);
+        top: -1.83px;
+        left: -1.83px;
+        bottom: -1.83px;
+        right: -1.83px;
+        border-radius: inherit;
+        z-index: -1;
+    }
+}
+.bg-custom-ltr{
+    background: linear-gradient(-200deg, #242726 6.67%, rgba(36, 39, 38, 0) 74.33%);
+    position: relative;
+    border-radius: 4.58px;
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(89.43deg, rgba(255, 255, 255, 0.11) 1.19%, rgba(255, 255, 255, 0) 36.37%);
+        top: -1.83px;
+        left: -1.83px;
+        bottom: -1.83px;
+        right: -1.83px;
+        border-radius: inherit;
+        z-index: -1;
+    }
 }
